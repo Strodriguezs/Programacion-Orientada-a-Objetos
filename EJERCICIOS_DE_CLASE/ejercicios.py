@@ -72,3 +72,12 @@ for i in range(1,201):
 
 for i in range(1,31):
     print(f"El cuadrado de {i} es {i**2}")
+
+#16) Escribir un programa en Java que multiplique los 20 primeros número naturales (1*2*3*4*5...).
+
+producto = 1
+
+for i in range(1,21):
+    producto = producto * i
+
+print(producto)
