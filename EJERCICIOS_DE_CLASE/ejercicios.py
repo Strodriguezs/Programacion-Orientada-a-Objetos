@@ -14,3 +14,9 @@ print(int(273))
 #3) Escribir un programa en Python que imprima por pantalla un número decimal, por ejemplo el 5.3, ó el 7.5.
 
 print(float(5.3))
+
+# 1.2 Operaciones básicas y bucles
+
+#4) Escribir un programa en Python que imprima por pantalla la suma de 1234 y 532.
+
+print(1234 + 532)
