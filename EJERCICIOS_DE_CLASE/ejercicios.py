@@ -20,3 +20,7 @@ print(float(5.3))
 #4) Escribir un programa en Python que imprima por pantalla la suma de 1234 y 532.
 
 print(1234 + 532)
+
+#5) Escribir un programa en Python que imprima por pantalla la resta de 1234 y 532.
+
+print(1234 - 532)
