@@ -10,3 +10,7 @@ print("Hola, ya sé imprimir frases")
 #2) Escribir un programa en Python que imprima por pantalla un número entero, por ejemplo el 273, o el 597.
 
 print(int(273))
+
+#3) Escribir un programa en Python que imprima por pantalla un número decimal, por ejemplo el 5.3, ó el 7.5.
+
+print(float(5.3))
