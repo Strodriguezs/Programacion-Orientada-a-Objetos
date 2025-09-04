@@ -81,3 +81,10 @@ for i in range(1,21):
     producto = producto * i
 
 print(producto)
+
+#17) Escribir un programa en Python que sume los cuadrados de los cien primeros números naturales, mostrando el resultado en pantalla.
+
+s = 1
+
+for i in range(2,101):
+    s = s + i**2
