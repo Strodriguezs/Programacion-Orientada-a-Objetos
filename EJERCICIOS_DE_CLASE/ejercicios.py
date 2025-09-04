@@ -57,3 +57,8 @@ for i in range(5,11):
 
 for i in range(5,16):
     print(i)
+
+#13) Escribir un programa en Python que imprima por pantalla los números del 5 al 15000.
+
+for i in range(5,15001):
+    print(i)
