@@ -28,3 +28,7 @@ print(1234 - 532)
 #6) Escribir un programa en Python que imprima por pantalla el producto de 1234 y 532.
 
 print(1234 * 532)
+
+#7) Escribir un programa en Python que imprima por pantalla la division de 1234 entre 532.
+
+print(1234 / 532)
