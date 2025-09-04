@@ -37,3 +37,8 @@ print(1234 / 532)
 
 for i in range(1,4):
     print(i)
+
+#9) Escribir un programa en Python que imprima por pantalla los números del 1 al 9.
+
+for i in range(1,10):
+    print(i)
