@@ -62,3 +62,8 @@ for i in range(5,16):
 
 for i in range(5,15001):
     print(i)
+
+#14) Escribir un programa en Java que imprima 200 veces la palabra “hola”.
+
+for i in range(1,201):
+    print("hola")
