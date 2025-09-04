@@ -67,3 +67,8 @@ for i in range(5,15001):
 
 for i in range(1,201):
     print("hola")
+
+#15) Escribir un programa en Python que imprima por pantalla los cuadrados de los 30 primeros números naturales.
+
+for i in range(1,31):
+    print(f"El cuadrado de {i} es {i**2}")
