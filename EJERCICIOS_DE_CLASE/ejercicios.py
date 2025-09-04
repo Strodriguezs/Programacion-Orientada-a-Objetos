@@ -32,3 +32,8 @@ print(1234 * 532)
 #7) Escribir un programa en Python que imprima por pantalla la division de 1234 entre 532.
 
 print(1234 / 532)
+
+#8) Escribir un programa en Python que imprima por pantalla los números del 1 al 3.
+
+for i in range(1,4):
+    print(i)
