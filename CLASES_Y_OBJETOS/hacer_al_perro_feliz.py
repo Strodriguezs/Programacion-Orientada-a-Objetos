@@ -2,10 +2,10 @@
 
 # En este programa se "Hace a un perro feliz" por medio de clases y objetos
 
-class perro:
-    def __init__(self, nombre):
+class Perro:
+    def __init__(self, nombre, felicidad):
         self.nombre = nombre
-        self.felicidad = 0
+        self.felicidad = felicidad
 
     def comer(self):
         self.felicidad += 4
@@ -19,12 +19,14 @@ class perro:
         self.felicidad += 3
         print(f"El perro {self.nombre} fué acariciado, es más feliz")
         
-
-
 # Programa principal
-dog = perro("Firulais")
 
 def main():
-    perro.comer()
-    perro.juguete()
-    perro.caricia()
+    mi_perro = Perro("Toby",0)
+    while mi_perro.felicidad < 10:
+        mi_perro.comer()
+        mi_perro.juguete()
+        mi_perro.caricia()
+    print(f"El perro {mi_perro.nombre} es feliz")
+
+main()
