@@ -1,32 +1,41 @@
-# Autor
-# Descripcion
+class Encuesta:
+    def __init__(self):
+        # Atributos principales
+        self.preguntas = ["¿Cómo se llama?",
+                          "¿Qué edad tiene?",
+                          "¿Qué tema prefieres para el proyecto?"]
+        self.respuestas = []  # lista de diccionarios, uno por cada estudiante
 
-def hola():
-    print("Hola Mundo ")
+    def agregar_respuesta(self):
+        respuesta_estudiante = {}
 
-def operation():
-        for i in (10,"casa",-3):
-              if(i=="casa"):
-                print(f"La palabra {i} ")
+        # Se recorren las preguntas y se guarda la respuesta en un diccionario
+        for pregunta in self.preguntas:
+            respuesta = input(pregunta)
+            respuesta_estudiante[pregunta] = respuesta
+
+        # Se agrega al listado general
+        self.respuestas.append(respuesta_estudiante)
+
+    def mostrar_resultados(self):
+      for i in range(1, 11):  # siempre 10 estudiantes
+          resp = self.respuestas[i-1]  # accedemos al diccionario en la posición i-1
+          print(f"\nEstudiante {i}:")
+          for pregunta, respuesta in resp.items():
+              print(f"  {pregunta}: {respuesta}")
 
 
-     
+# Programa principal
+def main():
+  encuesta = Encuesta()
 
-# Funciones
-# Diseñar una encuesta para 6 users,
-# Nombre 
-# Carrera
-# Idea de proyecto
+  for _ in range(10):  # asegura mínimo 10 respuestas
+    encuesta.agregar_respuesta()
 
-list_nombre = [1,2,3,4,5,6]
-list_carrera = [1,2,3,4,5,6]
-list_idea = [1,2,3,4,5,6]
+  # Mostrar resultados al final
+  encuesta.mostrar_resultados()
 
-def encuesta():
-  for i in range(2,7):
-    list_nombre[i] = input("¿Como se llama? ")
-    list_carrera[i] = input("Que carrera estudia? ")
-    list_idea[i] = input("¿Ya tienes una idea de proyecto?¿Cuál?")
+main()
 
 
 

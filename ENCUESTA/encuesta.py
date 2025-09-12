@@ -3,18 +3,43 @@
 # Hacer una encuesta para 10 USUARIOS 
 #peguntas: Usted sabe trabajar en equipo?, cual es su nivel en pithon?, cual es su idea de proyecto
 
-class encuesta:
-    def __init__(self, preguntas, respuestas):
-        self.preguntas = preguntas
-        self.respuestas = respuestas
+class Encuesta:
+    def __init__(self):
+        # Atributos principales
+        self.preguntas = ["¿Cómo se llama?",
+                          "¿Qué edad tiene?",
+                          "¿Qué tema prefieres para el proyecto?"]
+        self.respuestas = []  # lista de diccionarios, uno por cada estudiante
+
     def agregar_respuesta(self):
-        self.respuestas=[0,1,2,3,4,5,6,7,8,9]
-        for i in range (0,10):
-            self.preguntas = [input("¿Cual es su nombre?"),input("¿Que edad tiene?"),input("Si tiene una idea de proyecto diga cual es")]
-            self.respuestas[i] = self.preguntas
-        return self.respuestas
+        respuesta_estudiante = {}
+
+        # Se recorren las preguntas y se guarda la respuesta en un diccionario
+        for pregunta in self.preguntas:
+            respuesta = input(pregunta)
+            respuesta_estudiante[pregunta] = respuesta
+        # Se agrega al listado general
+        self.respuestas.append(respuesta_estudiante)
+
     def mostrar_resultados(self):
-        print(self.respuestas)
+      for i in range(1, 11):  # siempre 10 estudiantes
+          resp = self.respuestas[i-1]  # accedemos al diccionario en la posición i-1
+          print(f"\nEstudiante {i}:")
+          for pregunta, respuesta in resp.items():
+              print(f"  {pregunta}: {respuesta}")
+
+
+# Programa principal
+def main():
+  encuesta = Encuesta()
+
+  for _ in range(10):  # asegura mínimo 10 respuestas
+    encuesta.agregar_respuesta()
+
+  # Mostrar resultados al final
+  encuesta.mostrar_resultados()
+
+main()
 
 
 # Al final se debe stablecer un grupo maximo de 3 estudiantes y por lo menos 2 ideas de proyecto.
