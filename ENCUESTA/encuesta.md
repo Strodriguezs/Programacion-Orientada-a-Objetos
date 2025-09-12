@@ -45,6 +45,8 @@ Luego de recolectar 10 respuestas, el programa muestra todos los resultados en f
 - **Ejecucion**
     se repiten las tres preguntas solicitando informacion a los 10 estudiantes
             ![alt text](<Captura de pantalla 2025-09-11 233505.png>)
+
     y al final se entrega la informacion organizada
+    
             ![alt text](<Captura de pantalla 2025-09-11 233541.png>)
             ![alt text](<Captura de pantalla 2025-09-11 233556.png>)
